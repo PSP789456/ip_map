@@ -1,3 +1,11 @@
+:root {
+  --MainPrimary: #1e88e5;
+  --MainSecondary: #90caf9;
+  --MainThird: #6ab7ff;
+  --MainFourth: #c3fdff;
+  --MainFifth: #caf0f8;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,123 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.searchBoxWrapper {
+   display:flex;
+   flex-direction:row;
+   height: 45px; 
+   padding:1rem; 
+   justify-content: center;
+}
+
+.userIpInfoPlaceholder{
+  background-color:#90caf9;
+  text-align: center;
+  flex-grow: 1;
+  min-height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userIpInfo{
+  background-color: #90caf9;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.userApiInfoError {
+  background-color:#90caf9;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  min-height:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.userIpMapPlaceholder {
+  background-color:#f2f2f2;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userIpMapError {
+  background-color:#f2f2f2;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userSearchInfoPlaceholder {
+  background-color: #6ab7ff;
+  min-height:50%;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.userSearchInfoError {
+  background-color: #6ab7ff;
+  text-align: center;
+  flex-grow: 1;
+  min-height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userSearchMapPlaceholder {
+  background-color:#90caf9;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftBlock{
+  min-height: 95vh;
+  background-color: #6ab7ff;
+  max-width: 25vh;
+  display: flex;
+  flex:33%;
+  justify-content:center;
+  overflow-y: auto;
+}
+
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Column1{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex:66%;
+}
+
+.Column2{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex:33%;
+}
+
+.Column3{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex:33%;
+}
+
+.SearchHistoryItem {
+  margin-top: 0.5rem!important;
 }
